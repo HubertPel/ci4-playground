@@ -35,7 +35,6 @@ class Animals extends BaseController
 
     public function store()
     {
-        $test == $test;
         if (! $this->validate('animalCreate')) {
             return view('admin/animals/form', [
                 'validation' => $this->validator,
