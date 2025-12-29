@@ -1,5 +1,6 @@
 {
   "name": "verbum/logger-module",
+  "version": "dev-main",
   "type": "library",
   "autoload": {
     "psr-4": {

@@ -11,7 +11,8 @@
     },
     "require": {
         "php": "^8.1",
-        "codeigniter4/framework": "^4.0"
+        "codeigniter4/framework": "^4.0",
+        "verbum/logger-module": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9",
@@ -39,5 +40,14 @@
     },
     "scripts": {
         "test": "phpunit"
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/logger-module",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
 }
