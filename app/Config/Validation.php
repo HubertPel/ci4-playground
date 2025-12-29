@@ -7,9 +7,20 @@ use CodeIgniter\Validation\StrictRules\CreditCardRules;
 use CodeIgniter\Validation\StrictRules\FileRules;
 use CodeIgniter\Validation\StrictRules\FormatRules;
 use CodeIgniter\Validation\StrictRules\Rules;
+use App\Validation\AnimalValidation;
 
 class Validation extends BaseConfig
 {
+    public array $animalCreate = [];
+    public array $animalUpdate = [];
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->animalCreate = AnimalValidation::create();
+        $this->animalUpdate = AnimalValidation::update();
+    }
     // --------------------------------------------------------------------
     // Setup
     // --------------------------------------------------------------------

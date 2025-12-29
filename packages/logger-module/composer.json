@@ -1,0 +1,14 @@
+{
+  "name": "verbum/logger-module",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Verbum\\Logger\\": "src/Logger"
+    }
+  },
+  "extra": {
+    "codeigniter4": {
+      "discoverable": true
+    }
+  }
+}
